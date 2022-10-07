@@ -1,0 +1,32 @@
+/* pages/tags/tags.wxss */
+page {
+  /* background-color: #fff; */
+}
+.tags {
+  margin: 30rpx;
+}
+.tagsItem {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin: 20rpx 0 20rpx 0;
+}
+.tagsImg {
+  width: 150rpx;
+  height: 150rpx;
+  padding: 10rpx;
+}
+.tagsMain {
+  /* margin-left: 20rpx; */
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+}
+.tagsMain .tagsTitle {
+  font-size: 35rpx;
+  margin-bottom: 10rpx;
+}
+.tagsMain .tagsDesc {
+  font-size: 32rpx;
+  opacity: .5;
+}

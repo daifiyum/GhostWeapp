@@ -1,0 +1,37 @@
+/* pages/tag/tag.wxss */
+.postList {
+  margin: 20rpx 30rpx 0 30rpx;
+}
+.padding {
+  padding: 20rpx 20rpx 0 20rpx;
+}
+.postList .postItem {
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-bottom: 30rpx;
+  overflow: hidden;
+}
+.postItem .postMain .postTitle {
+  font-size: 35rpx;
+}
+
+.postItem .postMain .postDesc {
+  font-size: 32rpx;
+  opacity: .5;
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  word-wrap:break-word;
+  -webkit-line-clamp:3;
+  -webkit-box-orient: vertical
+}
+.postItem .postTools:last-child {
+  padding-bottom: 20rpx;
+}
+.postItem .postTools text{
+  font-size: 32rpx;
+  opacity: .5;
+  color: #ff911b;
+  border-radius: 10rpx;
+}

@@ -1,0 +1,11 @@
+<view class="tags">
+  <navigator url="/pages/tag/tag?slug={{item.slug}}&name={{item.name}}" class="tagsItem" wx:for="{{tagsData}}" wx:key="key">
+    <view class="tagsImg">
+      <van-image width="150rpx" height="150rpx" radius="10rpx" fit="cover" lazy-load src="{{item.feature_image}}" />
+    </view>
+    <view class="tagsMain">
+      <text class="tagsTitle">{{item.name}}</text>
+      <text class="tagsDesc">{{item.description}}</text>
+    </view>
+  </navigator>
+</view>

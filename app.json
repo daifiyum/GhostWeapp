@@ -1,0 +1,40 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/tags/tags",
+        "custom-tab-bar/index",
+        "pages/post/post",
+        "pages/tag/tag",
+        "pages/collect/collect",
+        "pages/search/search"
+    ],
+    "usingComponents": {
+      "van-tabbar": "@vant/weapp/tabbar/index",
+      "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+      "van-cell": "@vant/weapp/cell/index",
+      "van-cell-group": "@vant/weapp/cell-group/index",
+      "van-image": "@vant/weapp/image/index",
+      "van-icon": "@vant/weapp/icon/index",
+      "van-search": "@vant/weapp/search/index"
+    },
+    "tabBar": {
+      "custom": true,
+      "list": [{
+        "pagePath": "pages/index/index",
+        "text": "推荐"
+      }, {
+        "pagePath": "pages/tags/tags",
+        "text": "分类"
+      }, {
+        "pagePath": "pages/collect/collect",
+        "text": "收藏"
+      }]
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Ghost小程序",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json"
+}

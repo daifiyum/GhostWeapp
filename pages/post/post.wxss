@@ -1,0 +1,35 @@
+/* pages/post/post.wxss */
+page {
+  background-color: #fff;
+}
+.postContainer {
+  margin: 20rpx 30rpx 0 30rpx;
+}
+.pbottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  background-color: red;
+}
+.pbottom button {
+  border-radius: 0;
+  border: 0;
+  flex: 1;
+}
+.pbottom button::after {
+  border: 0;
+  border-radius: 0;
+}
+/* .pbottom button:first-child:after {
+  border-right: 1px solid #eee;
+  border-radius: 0;
+} */
+.pbottom .like {
+  background: linear-gradient(to right, #ffd01e, #ff8917);
+  color: #fff;
+}
+.pbottom .share {
+  background: linear-gradient(to right, #ff6034, #ee0a24);
+  color: #fff;
+}

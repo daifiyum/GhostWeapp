@@ -1,0 +1,99 @@
+/* pages/collect/collect.wxss */
+.postList {
+  margin: 20rpx 30rpx 0 30rpx;
+}
+.padding {
+  padding: 20rpx 20rpx 0 20rpx;
+}
+.postList .postItem {
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-bottom: 30rpx;
+  overflow: hidden;
+}
+.postItem .postMain .postTitle {
+  font-size: 35rpx;
+}
+
+.postItem .postMain .postDesc {
+  font-size: 32rpx;
+  opacity: .5;
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  word-wrap:break-word;
+  -webkit-line-clamp:3;
+  -webkit-box-orient: vertical
+}
+.postTools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.postItem .postTools:last-child {
+  padding-bottom: 20rpx;
+}
+.postItem .postTools text{
+  font-size: 32rpx;
+  opacity: .5;
+  color: #ff911b;
+  border-radius: 10rpx;
+}
+.postItem button {
+  padding: 30rpx 0 30rpx 0;
+  line-height: 1;
+  border-radius: 0;
+  background-color: rgb(255, 159, 95);
+  color: #fff;
+  margin: 0;
+  font-size: 34rpx;
+}
+.postItem button::after {
+  border: 0;
+}
+/*SwipeCell */
+.cellList {
+  padding: 30rpx;
+  background-color: #fff;
+  display: flex;
+}
+.cellList .img {
+  width: 200rpx;
+  height: 200rpx;
+}
+.cellCon {
+  padding: 0 20rpx 0 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.cellCon .title {
+  font-size: 35rpx;
+}
+.cellCon .desc {
+  font-size: 32rpx;
+  opacity: .5;
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  word-wrap:break-word;
+  -webkit-line-clamp:3;
+  -webkit-box-orient: vertical;
+  margin-top: 10rpx;
+}
+
+.van-swipe-cell__right {
+  display: flex;
+  width: 70px;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  line-height: 44px;
+  color: #fff;
+  background-color: #f44;
+}
+.item {
+  width: 100%;
+  height: 100%;
+}

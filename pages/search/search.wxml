@@ -1,0 +1,8 @@
+<!--pages/search/search.wxml-->
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" bind:change="onChange" />
+
+<van-cell-group wx:for="{{searchRes}}" wx:key="*this">
+  <navigator url="/pages/post/post?id={{item.id}}">
+    <van-cell label-class="mylabel" title="{{item.title}}" label="{{item.excerpt}}" border="{{ false }}" />
+  </navigator>
+</van-cell-group>

@@ -1,0 +1,12 @@
+<!--pages/post/post.wxml-->
+<van-image width="100%" height="350rpx" fit="cover" lazy-load src="{{postContent[0].feature_image}}" />
+
+<view class="postContainer">
+  <van-divider contentPosition="center" fontSize="58rpx" textColor="#000">{{postContent[0].title}}</van-divider>
+  <mp-html content="{{postContent[0].html}}" lazy-load scroll-table selectable use-anchor tag-style="{{tagStyle}}" bindload="load" bindready="ready" bindimgtap="imgtap" bindlinktap="linktap">加载中...</mp-html>
+</view>
+
+<view class="pbottom">
+  <button class="like" bindtap="like">收藏</button>
+  <button open-type="share" class="share">分享</button>
+</view>

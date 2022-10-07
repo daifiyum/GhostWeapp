@@ -1,0 +1,6 @@
+<!--components/custom-tab-bar/index.wxml-->
+<van-tabbar active="{{ active }}" active-color="#ff911b" bind:change="onChange">
+  <van-tabbar-item icon="wap-home-o">推荐</van-tabbar-item>
+  <van-tabbar-item icon="apps-o">分类</van-tabbar-item>
+  <van-tabbar-item icon="like-o">收藏</van-tabbar-item>
+</van-tabbar>

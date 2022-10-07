@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<navigator url="/pages/search/search">
+<van-search disabled placeholder="请输入搜索关键词" />
+</navigator>
+
+<view class="swiper">
+  <swiper class="swiperBox" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" 	indicator-color="rgb(255 255 255 / 30%)" 	indicator-active-color="#fff">
+    <block wx:for="{{swiper}}" wx:key="*this">
+      <navigator url="/pages/post/post?id={{item.id}}">
+      <swiper-item>
+        <view class="swiper-item {{item}}">
+          <van-image width="100%" height="370rpx" fit="cover" lazy-load src="{{item.feature_image}}" />
+        </view>
+        <text class="bannerTitle">{{item.title}}</text>
+      </swiper-item>
+    </navigator>
+    </block>
+  </swiper>
+</view>
+
+<view class="postList">
+  <navigator url="/pages/post/post?id={{item.id}}" class="postItem" wx:for="{{postData}}" wx:key="key" wx-for-item="item">
+    <view class="postMain">
+      <van-image width="100%" height="300rpx" fit="cover" lazy-load src="{{item.feature_image}}" />
+
+      <text class="postTitle padding">{{item.title}}</text>
+      <text class="postDesc padding">{{item.excerpt}}</text>
+    </view>
+    <view class="postTools padding">
+      <text>{{item.tags[0].name}}</text>
+    </view>
+  </navigator>
+</view>
